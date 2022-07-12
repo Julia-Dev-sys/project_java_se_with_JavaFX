@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <TableView fx:id="twmanutencaovenda" prefHeight="436.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tcCodigoProduto" prefWidth="110.0" text="Codigo Produto" />
+            <TableColumn fx:id="tcCodigoCliente" prefWidth="97.0" text="Codigo Cliente" />
+            <TableColumn fx:id="tcQuantidade" prefWidth="99.0" text="Quantidade" />
+            <TableColumn fx:id="tcUnitario" prefWidth="100.0" text="Unitário" />
+            <TableColumn fx:id="tcTotal" prefWidth="93.0" text="Total" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <Pane prefHeight="0.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

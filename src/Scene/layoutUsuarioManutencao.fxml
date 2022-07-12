@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <TableView fx:id="twusuario" onKeyPressed="#atualizarTextField" onMouseClicked="#atualizarTextField" prefHeight="284.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nomecolumn" prefWidth="295.0" text="Nome" />
+          <TableColumn fx:id="emailcolumn" minWidth="0.0" prefWidth="304.0" text="Email" />
+        </columns>
+      </TableView>
+   </top>
+   <bottom>
+      <Pane prefHeight="115.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="tfnome" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="268.0" />
+            <TextField fx:id="tfemail" layoutX="300.0" layoutY="14.0" prefHeight="25.0" prefWidth="291.0" />
+            <Button fx:id="btSalvarUsuario" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" onAction="#atualizarUsuario" text="Salvar" />
+            <Button fx:id="btCancelarUsuario" layoutX="148.0" layoutY="63.0" mnemonicParsing="false" onAction="#atualizarTextField" prefHeight="25.0" prefWidth="72.0" text="Cancelar" />
+            <Button fx:id="btExcluirUsuario" layoutX="68.0" layoutY="63.0" mnemonicParsing="false" onAction="#excluirUsuario" prefHeight="25.0" prefWidth="72.0" text="Excluir" textFill="#dd6767" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
