@@ -1,1 +1,1 @@
-# javase projeto com CRUD completo de um sistema de cadastro de usuários,clientes,produtos e vendas.
+# Projeto de sistema de vendas feito em CRUD desenvolvido na linguagem JAVA e usando a ferramenta JavaFX.
